@@ -1,0 +1,465 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>SKA SKA-RAILWAYS.</title>
+	<link rel="icon" href="D:\Programming\favicon1.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<link href="style.css" rel="stylesheet" type="text/css">
+ </head>
+ <script type="text/javascript">
+	window.parentPage = true;
+function ctck()
+{
+var sds = document.getElementById("dum");
+
+}
+
+</script>
+<style>
+    body {
+      background-image: url('images/train16.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    
+    </style>
+
+<style>
+	body {
+	  margin: 0;
+	  font-family: Arial, Helvetica, sans-serif;
+	}
+	
+	.topnav {
+	  overflow: hidden;
+	  background-color: #333;
+	}
+	
+	.topnav a {
+	  float: left;
+	  color: #f2f2f2;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	  font-size: 17px;
+	}
+	
+	.topnav a:hover {
+	  background-color: #ebe2e2;
+	  color: black;
+	}
+	
+	.topnav a.active {
+	  background-color: #04AA6D;
+	  color: white;
+	}
+	</style>
+	
+
+	
+	<div class="topnav">
+	
+	  <a class="active" href="#home">HOME</a>
+	  <a href="adminlogin.jsp">ADMIN LOGIN</a>
+	  <a href="userlogin.jsp">USER LOGIN</a>
+	  <a href="ticketi.jsp">BOOK A TICKET</a>
+	  <a href="PNRiu.jsp">PNR STATUS</a>
+	  <a href="Trainsch.jsp">TRAIN SCHEDULE</a>
+	  <a href="Register.jsp">REGISTER</a>
+	  <a id="lblTime"></a>
+		     <br>
+  
+			
+		 
+
+<div id="footer_top">
+<script LANGUAGE="JavaScript">
+         
+    function login1(form)
+	{
+		var name = document.getElementById("name").value;
+		var feed = document.getElementById("feed").value;
+		if(name =='')
+		{
+			alert("please enter Your Name");
+			return false;
+		}
+		else if(feed=='')
+		{
+        	alert("Enter Your FeedBack");
+			return false;
+		}
+		else
+		{
+		  //alert("please fill corect details");
+		  //window.location.href =ul;
+		 //const myWindow.document.open(+<form method = post action = "http://192.168.43.42:8181/test/Jdbin.jsp"); 
+		  //document.writeln("<form method = post action = http://192.168.43.42:8181/uservaljsp/Jdbin.jsp ">
+		}
+	}
+		function clearFunc()
+	{
+		document.getElementById("email").value="";
+		document.getElementById("pwd1").value="";
+	}	
+		</script>
+    <br>
+   
+	
+   </div>
+  
+  
+  
+    <script type="text/javascript">
+    document.onload3 = ctck();
+
+    </script>
+
+    </div>
+	
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the header */
+header {
+  padding: 0px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 40%;
+  height: 200px; /* only for demonstration, should be removed */
+  padding: 40px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding:50;
+}
+
+article {
+  float: right;
+  padding: 120px;
+  width: 60%;
+  height: 100px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+   padding:150px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 90%;
+    height: auto;
+  }
+}
+</style>
+
+<body>
+
+<section>
+  <nav>
+	<script type="text/javascript">
+		window.onload= function ()
+	  {
+		  DisplayCurrentTime();
+	   var today = new Date().toISOString().split('T')[0];
+	   document.getElementsByName("doj")[0].setAttribute('min', today);
+	  }
+		  function DisplayCurrentTime() {
+		  setInterval(() => {
+			  var date = new Date();
+			  var hours = date.getHours() > 12 ? date.getHours() - 12 : date.getHours();
+			  var am_pm = date.getHours() >= 12 ? "PM" : "AM";
+			  hours = hours < 10 ? "0" + hours : hours;
+			  var minutes = date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes();
+			  var seconds = date.getSeconds() < 10 ? "0" + date.getSeconds() : date.getSeconds();
+			  time = hours + ":" + minutes + ":" + seconds + " " + am_pm;
+			  var lblTime = document.getElementById("lblTime");
+			  lblTime.innerHTML = time;
+				}, 100);
+		  };
+	  </script>
+	
+	<h3><font color="blue">THE ADMINS</font></h3>
+   <ol type="a">
+	<li><h4><font style="color:rgb(8, 111, 236)">SAI</font></h4></li>
+	<li><h4><font style="color:rgb(208, 0, 254)"">SAI KIRAN</font></h4></li>
+	<li><h4><font style="color:rgb(40, 124, 73)">RAMESH</font></h4></li>
+	<li><h4><font style="color:rgb(11, 11, 238)">RAJITHA</font></h4></li>
+	
+   </ol>
+   </nav>
+   <article>
+    <h1><font size="100"Style="color:azure">SKA-RAILWAYS</font></h1>
+	<font size="6"Style="color:azure">Safety | Security | Punctuality</font>
+	<br>
+	<br>
+	<h4><font size="5"Style="color:blue">News & Events</font></h4>
+	<marquee width="70%" align="left" direction="up" height="200px" scrollamount="2" style="color:#fbfbfdef">
+		SKAR And ITS AFFILIATES Are Currently Working to Run More Trains Between <br>
+		New Delhi to Chennai Bangalore and Mumbai
+		<br>SKAR offering A Quota Based Reservation for PHC and Women by Ladies Quota
+		<br>SKAR improving Railway Network along With increasing of Employees
+	    <br>SKAR Offering Different Couch Class For Your Comfortable Journey.
+		
+	</marquee>
+
+</article>
+</section>
+
+<style>
+	div.a {
+	  text-align: center;
+	}
+	
+	div.b {
+	  text-align: left;
+	}
+	
+	div.c {
+	  text-align: left;
+	} 
+	
+	div.d {
+	  text-align: justify;
+	} 
+	</style>
+   <h3><font style="color:rgb(251, 247, 255)">INSTRUCTIONS TO THE USERS</font></h3>
+			 <marquee width="30%" align="right" direction="up" height="250px" scrollamount="2" style="color:#f2f2f2">
+			<br>*Prescribed Photo Identity Proofs Are
+			<br>Voter Identity / Passport / Aadhar card / Photo Id Issued By Central/State Govt.
+			<br>* The Tickets is Booked under For PHC or The Ladies Quota then Passengers Need to carry a identity proof. 
+			<br><br>*Travelling In Trains Without a Ticket is Totally Illegal will Fined Upto RS 5000
+			<br><br>* PNRs Having fully Waiting List Status is Droped
+			<br>and Automatically Refunded to User Account
+			<br><br>* Never Purchase E-Tickets From Unauthorized Persons or persons using thier ID as Commercial purpose
+			<br><br>* SKAR OR ITS AFFILIATES NEVER ASK FOR YOUR PERSONAL BANK OR SECURITY DETAILS . 
+			<br>PLEASE BE AWARE IF ANYONE IS ASKING FOR YOUR ATM PIN CVV NUMBER. 
+		    <br><br>* All The Users Need To Regester Them Selfs In The Web site For Ticket Booking Purpose Its Free of Cost And Easy To Book At SKAR
+			<br>* While Login to the User Need to note down 
+			<br>The Usern number and User name along with password at the time of Registering
+			<br>* In Case of Train is Delayed for 4 Hours Then Refund is Admissible.
+			<br>* In Case of train cancellation on its entire Run Then Toatal RS/Fund Refunded To users Account Automatically
+			<br>*
+		</marquee>
+		 
+
+<footer>
+    
+  <div id="footer_copyright" >
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+	* {box-sizing: border-box;}
+	body {font-family: Verdana, sans-serif;}
+	.mySlides {display: none;}
+	img {vertical-align: middle;}
+	
+	/* Slideshow container */
+	.slideshow-container {
+	  max-width: 400px;
+	  position: relative;
+	  margin: auto;
+	}
+	
+	/* Caption text */
+	.text {
+	  color: #f2f2f2;
+	  font-size: 15px;
+	  padding: 8px 12px;
+	  position: absolute;
+	  bottom: 8px;
+	  width: 50%;
+	  text-align: absolute;
+	}
+	
+	/* Number text (1/3 etc) */
+	.numbertext {
+	  color: #f2f2f2;
+	  font-size: 12px;
+	  padding: 8px 12px;
+	  position: absolute;
+	  top: 0;
+	}
+	
+	/* The dots/bullets/indicators */
+	.dot {
+	  height: 15px;
+	  width: 15px;
+	  margin: 0 2px;
+	  background-color: #bbb;
+	  border-radius: 50%;
+	  display: inline-block;
+	  transition: background-color 0.6s ease;
+	  
+	}
+	
+	.active {
+	  background-color: #717171;
+	}
+	
+	/* Fading animation */
+	.fade {
+	  -webkit-animation-name: fade;
+	  -webkit-animation-duration: 2s;
+	  animation-name: fade;
+	  animation-duration: 2s;
+	}
+	
+	@-webkit-keyframes fade {
+	  from {opacity: .4} 
+	  to {opacity: 1}
+	}
+	
+	@keyframes fade {
+	  from {opacity: .4} 
+	  to {opacity: 1}
+	}
+	
+	/* On smaller screens, decrease text size */
+	@media only screen and (max-width: 200px) {
+	  .text {font-size: 100px}
+	}
+	</style>
+	<section>
+	<div class="slideshow-container">
+	
+	<div class="mySlides fade">
+	  <div class="numbertext">1 / 3</div>
+	  <img src="images/VandeTrain.jpg" style="width:110%" width=200 height=200>
+	  <div class="text">Bullet Trains</div>
+	</div>
+	
+	<div class="mySlides fade">
+	  <div class="numbertext">2 / 3</div>
+	  <img src="images/train5.jpg" style="width:110%" width=200 height=200>
+	  <div class="text">Malgev Trains </div>
+	</div>
+	
+	<div class="mySlides fade">
+	  <div class="numbertext">3 / 3</div>
+	  <img src="images/maha.jpg" style="width:110%" width=200 height=200>
+	  <div class="text">Maharaja Trains</div>
+	</div>
+	</div>
+	<br>
+	<div style="text-align:center">
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 
+	</div>
+	</section>
+	<script>
+	var slideIndex = 0;
+	showSlides();
+	
+	function showSlides() {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("dot");
+	  for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";  
+	  }
+	  slideIndex++;
+	  if (slideIndex > slides.length) {slideIndex = 1}    
+	  for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	  setTimeout(showSlides, 5000); // Change image every 5 seconds
+	}
+	</script>
+    <center>
+        <form method = "post" onSubmit="return login1(this)" action = "feedbackdui.jsp">
+            <fieldset style="width:23%; background-color:rgba(87, 215, 22, 0.121)">
+                <h3><center><font color="blue">Your FeedBack</font></center></h3>
+                <hr>
+                <table>
+                    <tr>
+                        <td><font color="blue">Name:</font></td>
+                        <td> <input type = "text" name = "name" id="name" Placeholder="NAME"></td>
+                    </tr>
+                    <tr>
+                        <td><font color="blue">FeedBack:</font></td>
+                        <td><textarea name = "feed" id="feed"  Placeholder="YOUR FEEDBACK HERE"></textarea></td>
+                    </tr>
+					<textarea id="demo11" name="dofdb" hidden>
+					</textarea>
+
+<tr>
+		 <script>
+					   window.onload = function () {
+DisplayCurrentTime();
+};
+
+
+setInterval(() => {
+						var date = new Date();
+var current_date = date.getFullYear()+"-"+(date.getMonth()+1)+"-"+ date.getDate();
+var current_time = date.getHours()+":"+date.getMinutes()+":"+ date.getSeconds();
+
+var date_time =current_time+" "+current_date;	
+document.getElementById("demo11").innerHTML = date_time;
+					 }, 1000);
+
+						 </script>
+		 
+		 </td>
+		 </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type = "Submit" value="Submit FeedBack" name = "s1" onClick ="login1(this.form)">
+						<input type="reset" value="Reset" onclick="clearFunc()">
+						
+						</td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+		<br>
+		<br>
+          <!--<table border="4px" bordercolor="green">
+	  <tr>
+	  <td>
+       <a href="feedbp.jsp"><font color="blue">Click Here For USERS FEEDBACK</font></a>
+     </td>
+	 </tr>
+	 </table>-->
+	</center>
+ 
+ <p>Each people plan their Toure for A vaction that where they got Enjoyment along with Happiness.</p>
+	  
+  Copyright © SKA RAILWAY DEVELOPMENTS ALL RIGHTS RECEIVED 2023</div>
+
+ </div>
+ 
+</footer>
+	
+   </body>
+    </html>
